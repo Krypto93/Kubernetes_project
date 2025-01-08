@@ -1,19 +1,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: arnab
+   name:  arnab biswas
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: arnab
+     app:  arnab biswas
    template:
       metadata:
         labels:
-          app: arnab
+          app:  arnab biswas
       spec:
        containers:
-        - name: arnab
+        - name:  arnab biswas
           image: krypto93/pipeline_demo
           imagePullPolicy: Always
           ports:
